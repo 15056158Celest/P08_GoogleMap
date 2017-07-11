@@ -76,10 +76,10 @@ public class MapsActivity extends FragmentActivity {
                 LatLng west = new LatLng(1.339341, 103.705387);
                 Marker west_marker = map.addMarker(new
                         MarkerOptions()
-                        .position(east)
+                        .position(west)
                         .title("HQ-WEST")
                         .snippet("1 Jurong West Central 2, Singapore 648886")
-                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
 
 
                 UiSettings ui = map.getUiSettings();
@@ -107,6 +107,12 @@ public class MapsActivity extends FragmentActivity {
                 });
             }
         });
+
+        btn1 = (Button) findViewById(R.id.btn1);
+        btn2 = (Button) findViewById(R.id.btn2);
+        btn3 = (Button) findViewById(R.id.btn3);
+        btn4 = (Button) findViewById(R.id.btn4);
+
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
